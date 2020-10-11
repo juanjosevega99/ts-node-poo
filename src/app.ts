@@ -1,7 +1,10 @@
-import { Server } from './server';
+import { loadControllers } from 'awilix-express';
+import Server from './server';
+import container from './container';
 
 const app = new Server().getApp();
 
-app.use('/', (req, res) => res.send('hello there'));
+container(app);
+app.use(loadControllers('api/modules/**/*.controller.ts', { cwd: __dirname }));
 
-export { app };
+export default { app };

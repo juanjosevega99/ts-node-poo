@@ -1,10 +1,11 @@
 import express from 'express';
 import cors from 'cors';
 import helmet from 'helmet';
-import { Config } from './config';
+import Config from './config';
 
-export class Server {
+export default class Server {
   private port = Number(Config.api().port);
+
   private app!: express.Application;
 
   public constructor() {

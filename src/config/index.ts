@@ -3,7 +3,7 @@ import { IApi } from './interface/api.interface';
 
 dotenv.config();
 
-export class Config {
+export default class Config {
   private static instance: Config;
 
   private constructor() {
