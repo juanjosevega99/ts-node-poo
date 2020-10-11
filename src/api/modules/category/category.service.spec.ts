@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import CategoryService from './category.service';
 
 const categoryService = new CategoryService();
