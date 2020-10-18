@@ -1,2 +1,2 @@
 # ts-node-poo
-Following the videos of Carlos
+Project created without nestjs to understand everything that the framework does underneath
